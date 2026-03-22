@@ -1,0 +1,18 @@
+body {
+  font-family: Arial;
+}
+
+nav {
+  background-color: lightblue;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
