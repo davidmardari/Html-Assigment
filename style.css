@@ -21,7 +21,7 @@ nav ul {
   margin: 0;
 }
 nav a:hover {
-  color: yellow;
+  color: rgb(171, 228, 230);
 }
 nav a {
   text-decoration: none;
