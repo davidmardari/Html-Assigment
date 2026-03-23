@@ -32,3 +32,9 @@ nav a {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.box {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
