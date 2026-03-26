@@ -321,3 +321,28 @@ main {
   background-color: white;
   transform: scale(1.02);
 }
+.video-page {
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

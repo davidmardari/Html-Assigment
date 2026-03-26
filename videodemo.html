@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
+<title>Video Demo</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>My Portfolio</h1>
-</header>
-<a href="#menu" class="menu-icon">☰ Menu</a>
-<nav id="menu">
-  <a href="#" class="close">X</a>
+<video autoplay muted loop id="bg-video">
+  <source src="BGVideo.mp4" type="video/mp4">
+</video>
 
+<a href="#menu" class="menu-icon">☰</a>
+
+<nav id="menu">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Projects</a></li>
@@ -25,13 +25,30 @@
   </ul>
 </nav>
 
-<main>
-  <h2>Video Demo</h2>
-  <p>Video will be added here.</p>
+<main class="video-page">
+
+  <h1>Video Demonstration</h1>
+
+  <div class="video-container">
+  <iframe 
+    src=""
+    title="Video Demo"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
 </main>
 
 <footer>
-  <p>2026 Portfolio</p>
+  <div class="footer-socials">
+    <a href="https://github.com/davidmardari" target="_blank">
+      <img src="github.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/dava_dovidic" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+  </div>
+  <p>@David Mardari</p>
 </footer>
 
 </body>
