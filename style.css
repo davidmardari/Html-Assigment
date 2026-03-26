@@ -4,15 +4,18 @@ body {
 }
 
 nav {
-  background-color: #444343;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
   position: relative;
   z-index: 2;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   padding: 10px;
   margin: 0;
 }
@@ -20,10 +23,32 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: rgb(171, 228, 230);
+  color: orange;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: orange;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.close {
+  display: none;
 }
 
 .grid {
@@ -49,11 +74,11 @@ footer {
 .menu-icon {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 10px;
   z-index: 3;
-  font-size: 28px;
-  padding: 10px;
+  font-size: 24px;
+  padding: 6px 10px;
   background-color: #333;
   color: white;
   text-decoration: none;
@@ -84,28 +109,31 @@ main {
 
 .hero {
   color: white;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 50px);
   animation: fadeIn 2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 12px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 .hero h1 {
-  font-size: 80px;
+  font-size: 90px;
   margin: 0;
 }
 
 .subtitle {
   color: rgb(187, 179, 166);
- margin: 5px 0;
+  margin: 6px 0;
+  font-size: 20px;
 }
 
 .intro {
@@ -113,12 +141,12 @@ main {
 }
 
 .intro p {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
 .intro h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin: 5px 0;
 }
 
@@ -132,7 +160,7 @@ main {
     display: none;
     position: absolute;
     width: 100%;
-    top: 50px;
+    top: 40px;
     left: 0;
     z-index: 2;
   }
@@ -152,10 +180,10 @@ main {
   }
 
   .hero h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .intro h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
