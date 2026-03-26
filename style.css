@@ -346,3 +346,26 @@ main {
   height: 100%;
   border: none;
 }
+.report {
+  max-width: 700px;
+  margin: 60px auto;
+  background: white;
+  padding: 50px;
+  color: black;
+  line-height: 1.6;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.report h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.report h2 {
+  margin-top: 25px;
+}
+
+.report ul {
+  padding-left: 20px;
+}
