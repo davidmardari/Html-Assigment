@@ -85,6 +85,7 @@ main {
 .hero {
   color: white;
   height: calc(100vh - 60px);
+  animation: fadeIn 2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,7 +94,10 @@ main {
   gap: 10px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 .hero h1 {
   font-size: 80px;
   margin: 0;
