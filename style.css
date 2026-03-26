@@ -279,3 +279,37 @@ main {
 .box:hover {
   transform: translateY(-8px);
 }
+.contact {
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: white;
+}
