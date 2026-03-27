@@ -240,7 +240,7 @@ nav a:hover::after {
   max-width: 800px;
   margin: 20px auto;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 63.75%; /* 16:9 ratio */
   height: 0;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
