@@ -1,22 +1,37 @@
 <!DOCTYPE html>
+<!-- Tells the browser this is HTML5 -->
+
 <html lang="en">
+<!-- Sets the language to English -->
+
 <head>
 <meta charset="UTF-8">
+<!-- Allows special characters to display correctly -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive on different devices -->
+
 <title>Video Demo</title>
+<!-- Title shown in the browser tab -->
+
 <link rel="stylesheet" href="style.css">
+<!-- Links the CSS file -->
 </head>
 
 <body>
 
+<!-- Background video -->
 <video autoplay muted loop id="bg-video">
   <source src="BGVideo.mp4" type="video/mp4">
 </video>
 
+<!-- Menu icon for mobile -->
 <a href="#menu" class="menu-icon">☰</a>
 
+<!-- Navigation menu -->
 <nav id="menu">
   <ul>
+    <!-- Links to other pages -->
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -25,30 +40,47 @@
   </ul>
 </nav>
 
+<!-- Main video section -->
 <main class="video-page">
 
+  <!-- Page heading -->
   <h1>Video Demonstration</h1>
 
+  <!-- Container to hold the video -->
   <div class="video-container">
+
+  <!-- Embedded video using iframe -->
   <iframe 
     src=""
     title="Video Demo"
     frameborder="0"
     allowfullscreen>
   </iframe>
+
 </div>
 </main>
 
+<!-- Footer section -->
 <footer>
+
+  <!-- Social media links -->
   <div class="footer-socials">
+
+    <!-- GitHub link -->
     <a href="https://github.com/davidmardari" target="_blank">
       <img src="github.png" alt="GitHub">
     </a>
+
+    <!-- Instagram link -->
     <a href="https://instagram.com/dava_dovidic" target="_blank">
       <img src="instagram.png" alt="Instagram">
     </a>
+
   </div>
+
+  <!-- Footer text -->
   <p>@David Mardari</p>
+
 </footer>
 
 </body>

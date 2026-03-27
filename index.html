@@ -1,22 +1,38 @@
 <!DOCTYPE html>
+<!-- This tells the browser we are using HTML5 -->
+
 <html lang="en">
+<!-- Sets the language to English -->
+
 <head>
 <meta charset="UTF-8">
+<!-- Allows special characters to display properly -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive on different screen sizes -->
+
 <title>Home</title>
+<!-- Title shown in browser tab -->
+
 <link rel="stylesheet" href="style.css">
+<!-- Links the CSS file to style the page -->
 </head>
 
 <body>
 
+<!-- Background video -->
 <video autoplay muted loop id="bg-video">
+  <!-- autoplay = plays automatically, muted = no sound, loop = repeats -->
   <source src="BGVideo.mp4" type="video/mp4">
 </video>
 
+<!-- Menu icon (used on small screens) -->
 <a href="#menu" class="menu-icon">☰</a>
 
+<!-- Navigation menu -->
 <nav id="menu">
   <ul>
+    <!-- List of links to different pages -->
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -25,36 +41,50 @@
   </ul>
 </nav>
 
+<!-- Main section (hero area) -->
 <main class="hero">
 
+  <!-- Main heading (your name) -->
   <h1>David Mardari</h1>
+
+  <!-- Intro section -->
   <div class="intro">
     <h2>University of Northampton Student</h2>
     <p class="subtitle">Year 1 Computer Science Student</p>
   </div>
 
+  <!-- About text -->
   <p class="about">
   I am a first year Computer Science student learning web development and building simple websites.
   </p>
 
+  <!-- Small hint text -->
   <p class="hint">
     View my projects to see examples of my work.
   </p>
 
 </main>
 
+<!-- Footer section -->
 <footer>
 
+  <!-- Social media icons -->
   <div class="footer-socials">
+
+    <!-- GitHub link -->
     <a href="https://github.com/davidmardari" target="_blank">
+      <!-- target="_blank" opens link in new tab -->
       <img src="github.png" alt="GitHub">
     </a>
 
+    <!-- Instagram link -->
     <a href="https://instagram.com/dava_dovidic" target="_blank">
       <img src="instagram.png" alt="Instagram">
     </a>
+
   </div>
 
+  <!-- Footer text -->
   <p>@David Mardari</p>
 
 </footer>

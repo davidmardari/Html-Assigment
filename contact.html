@@ -1,22 +1,38 @@
 <!DOCTYPE html>
+<!-- This tells the browser we are using HTML5 -->
+
 <html lang="en">
+<!-- Sets the page language to English -->
+
 <head>
 <meta charset="UTF-8">
+<!-- Allows special characters to work properly -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive on phones and tablets -->
+
 <title>Contact</title>
+<!-- Title shown in the browser tab -->
+
 <link rel="stylesheet" href="style.css">
+<!-- Links the CSS file -->
 </head>
 
 <body>
 
+<!-- Background video -->
 <video autoplay muted loop id="bg-video">
+  <!-- autoplay = plays automatically, muted = no sound, loop = repeats -->
   <source src="BGVideo.mp4" type="video/mp4">
 </video>
 
+<!-- Menu icon for mobile view -->
 <a href="#menu" class="menu-icon">☰</a>
 
+<!-- Navigation menu -->
 <nav id="menu">
   <ul>
+    <!-- Links to other pages -->
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -25,39 +41,61 @@
   </ul>
 </nav>
 
+<!-- Main contact section -->
 <main class="contact">
 
   <h1>Contact Me</h1>
+  <!-- Page heading -->
 
+  <!-- Contact form -->
   <form class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
+  <!-- Sends form data to an email -->
 
+  <!-- Name input -->
   <input type="text" name="name" placeholder="Your Name" required>
 
+  <!-- Email input -->
   <input type="email" name="email" placeholder="Your Email" required>
 
+  <!-- Subject input -->
   <input type="text" name="subject" placeholder="Subject" required>
 
+  <!-- Message box -->
   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
+  <!-- Submit button -->
   <button type="submit">Send Message</button>
 
 </form>
+
+<!-- Alternative contact info -->
 <p class="contact-info">
   Or email me directly at: davidmardari0@gmail.com
 </p>
 
 </main>
 
+<!-- Footer section -->
 <footer>
+
+  <!-- Social media links -->
   <div class="footer-socials">
+
+    <!-- GitHub link -->
     <a href="https://github.com/davidmardari" target="_blank">
       <img src="github.png" alt="GitHub">
     </a>
-    <a href="https://instagram.com/davidmardari" target="_blank">
+
+    <!-- Instagram link -->
+    <a href="https://instagram.com/dava_dovidic" target="_blank">
       <img src="instagram.png" alt="Instagram">
     </a>
+
   </div>
+
+  <!-- Footer text -->
   <p>@David Mardari</p>
+
 </footer>
 
 </body>

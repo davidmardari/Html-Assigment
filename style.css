@@ -1,57 +1,65 @@
+/* This sets the font for the whole page and removes default spacing */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
 }
 
+/* Makes html and body take up full height of the screen */
 html,
 body {
   height: 100%;
 }
 
+/* Makes the layout use flex so content can stretch nicely */
 body {
   display: flex;
   flex-direction: column;
 }
 
+/* Main content takes up remaining space */
 main {
   flex: 1;
 }
 
 
-
+/* Navigation bar styling */
 nav {
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.7); /* dark transparent background */
+  backdrop-filter: blur(5px); /* blur effect behind nav */
   position: relative;
   z-index: 2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Navigation list layout */
 nav ul {
-  list-style: none;
+  list-style: none; /* removes bullet points */
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 50px; /* space between items */
   padding: 10px;
   margin: 0;
 }
 
+/* Navigation links */
 nav a {
-  text-decoration: none;
+  text-decoration: none; /* removes underline */
   color: white;
   font-size: 16px;
   position: relative;
-  transition: 0.3s;
+  transition: 0.3s; /* smooth hover effect */
 }
 
+/* Hover effect for links */
 nav a:hover {
   color: orange;
 }
 
+/* Creates underline animation */
 nav a::after {
   content: "";
   position: absolute;
-  width: 0;
+  width: 0; /* starts invisible */
   height: 2px;
   background: orange;
   left: 0;
@@ -59,12 +67,14 @@ nav a::after {
   transition: 0.3s;
 }
 
+/* Expands underline on hover */
 nav a:hover::after {
   width: 100%;
 }
 
+/* Menu icon (for mobile) */
 .menu-icon {
-  display: none;
+  display: none; /* hidden on desktop */
   position: absolute;
   top: 8px;
   left: 10px;
@@ -76,27 +86,28 @@ nav a:hover::after {
   text-decoration: none;
 }
 
+/* Close button hidden by default */
 .close {
   display: none;
 }
 
 
-
+/* Background video styling */
 #bg-video {
-  position: fixed;
+  position: fixed; /* stays in place */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  object-fit: cover; /* fills screen */
+  z-index: -1; /* behind everything */
 }
 
 
-
+/* Hero section */
 .hero {
   color: white;
-  animation: fadeIn 2s;
+  animation: fadeIn 2s; /* fade animation */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,24 +117,16 @@ nav a:hover::after {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.projects {
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.contact {
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-
+/* Sections styling */
+.projects,
+.contact,
 .video-page {
   color: white;
   text-align: center;
   padding: 40px 20px;
 }
 
+/* Report box styling */
 .report {
   max-width: 700px;
   margin: 60px auto;
@@ -136,16 +139,17 @@ nav a:hover::after {
 }
 
 
-
+/* Grid layout for boxes */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
 
+/* Each box styling */
 .box {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 8px;
@@ -156,35 +160,40 @@ nav a:hover::after {
   transition: 0.3s;
 }
 
+/* Image inside box */
 .box img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
+/* Content inside box */
 .box-content {
   padding: 15px;
   background-color: white;
 }
 
+/* Box title */
 .box h2 {
   margin: 0 0 8px;
   font-size: 18px;
   color: #000;
 }
 
+/* Box paragraph */
 .box p {
   margin: 0;
   font-size: 14px;
   color: #333;
 }
 
+/* Hover effect (lift up) */
 .box:hover {
   transform: translateY(-8px);
 }
 
 
-
+/* Contact form styling */
 .contact-form {
   max-width: 500px;
   margin: 20px auto;
@@ -197,6 +206,7 @@ nav a:hover::after {
   backdrop-filter: blur(10px);
 }
 
+/* Input fields */
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
@@ -206,6 +216,7 @@ nav a:hover::after {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Submit button */
 .contact-form button {
   padding: 12px;
   border: none;
@@ -217,24 +228,26 @@ nav a:hover::after {
   transition: 0.3s;
 }
 
+/* Button hover effect */
 .contact-form button:hover {
   background-color: white;
   transform: scale(1.02);
 }
 
 
-
+/* Video container (keeps aspect ratio) */
 .video-container {
   max-width: 800px;
   margin: 20px auto;
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   overflow: hidden;
 }
 
+/* Video iframe */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -245,7 +258,7 @@ nav a:hover::after {
 }
 
 
-
+/* Social icons in footer */
 .footer-socials {
   margin-bottom: 10px;
   display: flex;
@@ -253,19 +266,21 @@ nav a:hover::after {
   gap: 25px;
 }
 
+/* Social images */
 .footer-socials img {
   width: 28px;
   transition: 0.3s;
   filter: brightness(0) invert(1);
 }
 
+/* Hover effect for icons */
 .footer-socials img:hover {
   transform: scale(1.2);
   filter: brightness(1) invert(0);
 }
 
 
-
+/* Footer styling */
 footer {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
@@ -276,15 +291,11 @@ footer {
 }
 
 
-
+/* Small text styles */
 .subtitle {
   color: #aaa;
   margin: 6px 0;
   font-size: 18px;
-}
-
-.intro {
-  margin: 0;
 }
 
 .intro p {
@@ -305,12 +316,14 @@ footer {
   color: #ddd;
 }
 
+/* Hint text */
 .hint {
   opacity: 0.6;
   font-size: 14px;
   margin-top: 10px;
 }
 
+/* Button styling */
 .btn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -320,32 +333,32 @@ footer {
   font-size: 14px;
 }
 
+/* Button hover */
 .btn:hover {
   background-color: white;
 }
 
 
-
+/* Fade in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
 
 
-
+/* Responsive design (for smaller screens) */
 @media (max-width: 800px) {
 
   .menu-icon {
-    display: block;
+    display: block; /* show menu button */
   }
 
   nav {
-    display: none;
+    display: none; /* hide nav */
     position: absolute;
     width: 100%;
     top: 40px;
@@ -354,11 +367,11 @@ footer {
   }
 
   nav:target {
-    display: block;
+    display: block; /* show when clicked */
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: column; /* stack items */
     text-align: center;
   }
 
@@ -376,7 +389,35 @@ footer {
   }
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column */
     grid-template-rows: auto;
   }
+  .report {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+}
+}
+.validation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.validation-item {
+  text-align: center;
+}
+
+.validation-item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.validation-item img {
+  width: 100%;
+  max-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

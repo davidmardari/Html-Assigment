@@ -1,19 +1,38 @@
 <!DOCTYPE html>
+<!-- Tells the browser this is HTML5 -->
+
 <html lang="en">
+<!-- Sets the language to English -->
+
 <head>
 <meta charset="UTF-8">
+<!-- Allows special characters to display properly -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive on different devices -->
+
 <title>Report</title>
+<!-- Title shown in browser tab -->
+
 <link rel="stylesheet" href="style.css">
+<!-- Links the CSS file -->
 </head>
 
 <body>
+
+<!-- Background video -->
 <video autoplay muted loop id="bg-video">
+  <!-- autoplay = plays automatically, muted = no sound, loop = repeats -->
   <source src="BGVideo.mp4" type="video/mp4">
 </video>
+
+<!-- Menu icon for mobile view -->
 <a href="#menu" class="menu-icon">☰</a>
+
+<!-- Navigation menu -->
 <nav id="menu">
   <ul>
+    <!-- Links to different pages -->
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -22,10 +41,145 @@
   </ul>
 </nav>
 
+<!-- Main report section -->
 <main class="report">
 
+ <!-- Main heading -->
+ <h1>Website Development Report</h1>
+
+<!-- Introduction section -->
+<h2>Introduction</h2>
+<p>
+This project was my first experience learning web development using HTML and CSS. At the beginning of the module, I had very little knowledge about how websites are built. I found it difficult to understand how HTML structure and CSS styling work together, especially when trying to position elements correctly on the page. However, over time, I became more confident and improved my skills through practice.
+</p>
+<h2>Module Experience</h2>
+
+<p>
+I found this module challenging but interesting. At the beginning, I had little experience with HTML and CSS, so I found it difficult to understand how to structure and style webpages.
+</p>
+
+<p>
+However, as I continued working on my website, I became more confident and started to understand how everything works together. I especially enjoyed designing the layout and seeing my progress over time.
+</p>
+
+<p>
+Overall, this module helped me improve my problem-solving skills and build a strong foundation in web development.
+</p>
+<!-- Development process section -->
+<h2>Development Process</h2>
+<p>
+The website I created is a portfolio consisting of five pages: Home, Projects, Contact, Video Demo, and Report. All pages are connected using a navigation bar and follow a consistent design. During development, I focused on making the website simple, clear, and easy to navigate. I worked step by step, starting with basic structure and then adding styling and layout.
+</p>
+
+<!-- Challenges section -->
+<h2>Challenges and Learning</h2>
+<p>
+One of the biggest challenges I faced was working with CSS layouts. At first, I struggled with positioning elements and making everything look aligned. Sometimes elements would not appear where I expected, which made debugging difficult. However, by testing different solutions and researching online, I slowly started to understand how CSS works. This helped me improve my problem-solving skills.
+</p>
+
+<!-- Technical section -->
+<h2>Technical Implementation</h2>
+<p>
+From a technical perspective, I used CSS Grid to create a 2x2 layout on the projects page to display my work clearly. I also used Flexbox to centre content on the home page. Additionally, I made the website responsive using media queries so it works on both desktop and mobile devices. The hamburger menu was added to improve navigation on smaller screens.
+</p>
+
+<!-- Design choices -->
+<h2>Design Decisions</h2>
+<p>
+For the design, I chose a dark theme with a video background to create a modern and professional look. I used white text to ensure readability and added orange as an accent colour for buttons and hover effects. My design was influenced by modern portfolio websites that use minimal layouts and strong visual elements. I aimed to keep the design simple but visually appealing.
+</p>
+
+<!-- Tools used -->
+<h2>Tools and Version Control</h2>
+<p>
+I used GitHub to manage my project and track my progress. Making regular commits helped me stay organised and allowed me to see how my website improved over time. This also helped me understand the importance of version control in development.
+</p>
+
+<!-- Conclusion -->
+<h2>Conclusion</h2>
+<p>
+Overall, this project helped me build a strong foundation in web development. I learned how to structure webpages, apply styling, and solve problems when things did not work as expected. If I were to improve this website in the future, I would add JavaScript for more interactivity and improve the contact form by connecting it to a backend service.
+</p>
+
+<!-- Validation section -->
+<h2>Validation</h2>
+<p>
+All HTML and CSS files were tested using W3C validation tools to ensure there were no major errors. Screenshots of the validation results are shown below.
+</p>
+
+<h2>Validation Screenshots</h2>
+<p>
+Below are the validation screenshots for each website file (HTML & CSS). 
+All files were checked using W3C validators and contain no major errors.
+</p>
+
+<div class="validation-grid">
+
+  <div class="validation-item">
+    <h3>Index.html</h3>
+    <img src="index_page_validation.png" alt="Index HTML validation">
+  </div>
+
+  <div class="validation-item">
+    <h3>Project.html</h3>
+    <img src="project_page_validation.png" alt="Project HTML validation">
+  </div>
+
+  <div class="validation-item">
+    <h3>Contact.html</h3>
+    <img src="contact_page_validation.png" alt="Contact HTML validation">
+  </div>
+
+  <div class="validation-item">
+    <h3>Report.html</h3>
+    <img src="report_page_validation.png" alt="Report HTML validation">
+  </div>
+
+  <div class="validation-item">
+    <h3>Video.html</h3>
+    <img src="video-validation.png" alt="Video HTML validation">
+  </div>
+
+  <div class="validation-item">
+    <h3>Main.css</h3>
+    <img src="style_css_validation.png" alt="Main CSS validation">
+  </div>
+</div>
+<!-- Video section -->
+<h2>Video Demonstration</h2>
+<p>
+The video demonstration of my website can be accessed here:
+</p>
+
+<!-- Video link -->
+<p>
+https://your-video-link
+</p>
 
 </main>
+
+<!-- Footer section -->
+<footer>
+
+  <!-- Social media links -->
+  <div class="footer-socials">
+
+    <!-- GitHub link -->
+    <a href="https://github.com/davidmardari" target="_blank">
+      <img src="github.png" alt="GitHub">
+    </a>
+
+    <!-- Instagram link -->
+    <a href="https://instagram.com/dava_dovidic" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+
+  </div>
+
+  <!-- Footer text -->
+  <p>@David Mardari</p>
+
+</footer>
 
 </body>
 </html>
